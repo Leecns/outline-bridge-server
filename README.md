@@ -1,6 +1,6 @@
 # Outline Bridge Server
 
-This repository includes Docker Compose files for running the V2Ray proxy as a bridge server for the Outline proxy.
+This repository includes Docker Compose files for running the V2Ray proxy as a bridge (relay) server for the Outline proxy.
 Its purpose is to enable the Outline proxy to function effectively in severely restricted networks where direct, secure, and reliable access may not be available.
 
 ## Documentation
@@ -39,7 +39,7 @@ Follow these steps to set up the V2Ray and Outline:
 1. Run `./setup.py` script. It gets the following inputs:
     1. `Outline Server Hostname`: Find it in Outline Manager > {Server} > Settings > Hostname
     1. `Outline Server Port`: Find it in Outline Manager > {Server} > Settings > Port
-    1. Allow the port for incoming/outcoming traffic if you have a firewall.
+    1. Allow the port for incoming/outgoing traffic if you have a firewall.
 1. Run `docker-compose up -d`.
 1. Change Outline Manager > {Server} > Settings > Hostname field to the bridge server IP address.
 1. Delete old access keys in the Outline Manager and generate new ones.
@@ -48,8 +48,8 @@ Follow these steps to set up the V2Ray and Outline:
 
 ### Docker Images
 
-By default, this repository uses the GitHub registry.
-You can modify the Docker-compose file to use Docker Hub.
+By default, this repository uses the GitHub Docker registry.
+You can modify the Docker-compose file to use Docker Hub instead.
 
 * GitHub:
     * Image: ```ghcr.io/getimages/v2fly-core:v4.45.2```
