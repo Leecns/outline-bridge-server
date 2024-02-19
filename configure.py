@@ -5,8 +5,8 @@ import json
 
 
 def add_inbound(i):
-    host = input(f"Enter the Outline server #{i} host: ")
-    port = int(input(f"Enter the Outline server #{i} port: "))
+    host = input(f"Outline server {i} Host: ")
+    port = int(input(f"Outline server {i} Port: "))
     return {
         'port': port,
         'protocol': 'dokodemo-door',
@@ -36,7 +36,7 @@ def main():
         "inbounds": []
     }
 
-    num_inbounds = int(input("Enter the number of Outline servers: ") or 1)
+    num_inbounds = int(input("Number of Outline servers: ") or 1)
     if num_inbounds < 1 or num_inbounds > 5:
         print('Number of outline servers must be between 1 and 5')
         return
@@ -49,7 +49,7 @@ def main():
 
     with open(filename, 'w') as file:
         json.dump(config, file, indent=2)
-    print("The config file updated. Run 'docker compose up -d' or 'docker compose restart'.")
+    print("The config updated. Run 'docker compose up -d' or 'docker compose restart'.")
 
 
 if __name__ == "__main__":
