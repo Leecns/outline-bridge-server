@@ -1,0 +1,15 @@
+version: "3"
+
+services:
+  xray:
+    image: ghcr.io/xtls/xray-core:latest
+    restart: always
+    ports:
+      - ${V2RAY_PORT_1:-8000}:8000
+      - ${V2RAY_PORT_1:-8000}:8000/udp
+      - ${V2RAY_PORT_2:-8001}:8001
+      - ${V2RAY_PORT_2:-8001}:8001/udp
+      - ${V2RAY_PORT_3:-8002}:8002
+      - ${V2RAY_PORT_3:-8002}:8002/udp
+    volumes:
+      - ./configs/:/etc/v2ray/

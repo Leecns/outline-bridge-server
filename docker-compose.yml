@@ -1,12 +1,9 @@
 version: "3"
 
 services:
-  v2ray:
-    image: ghcr.io/getimages/v2fly-core:v4.45.2
+  xray:
+    image: ghcr.io/xtls/xray-core:latest
     restart: always
-    ports:
-      - ${V2RAY_PORT:-1000}:1000
-      - ${V2RAY_PORT:-1000}:1000/udp
+    network_mode: host
     volumes:
-      - ./config/:/etc/v2ray/
-      - ./logs:/var/log/v2ray/
+      - ./configs/:/etc/v2ray/
