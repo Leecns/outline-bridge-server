@@ -5,9 +5,9 @@ import json
 
 
 def add_inbound(i):
-    host = input(f"Enter server {i} host: ")
-    port = int(input(f"Enter server {i} port: "))
-    inbound = {
+    host = input(f"Enter the Outline server #{i} host: ")
+    port = int(input(f"Enter the Outline server #{i} port: "))
+    return {
         'port': port,
         'protocol': 'dokodemo-door',
         'listen': '0.0.0.0',
@@ -17,7 +17,6 @@ def add_inbound(i):
             'network': 'tcp,udp'
         }
     }
-    return inbound
 
 
 def main():
@@ -28,10 +27,16 @@ def main():
         "log": {
             "loglevel": "warning"
         },
+        "outbounds": [
+            {
+                "protocol": "freedom",
+                "tag": "freedom"
+            }
+        ],
         "inbounds": []
     }
 
-    num_inbounds = int(input("Enter the number of outline servers: ") or 1)
+    num_inbounds = int(input("Enter the number of Outline servers: ") or 1)
     if num_inbounds < 1 or num_inbounds > 5:
         print('Number of outline servers must be between 1 and 5')
         return
