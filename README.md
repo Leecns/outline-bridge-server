@@ -39,11 +39,11 @@ Follow these steps to set up the Xray and Outline:
 1. Clone this repository into the bridge server.
 1. Run `./configure.py` script. It prompts the following items:
     1. `Number of Outline servers`: Please provide the number of servers with Outline installed, typically just `1`
-    1. `Outline server {i} Host`: Find it in Outline Manager > {Server i} > Settings > Hostname
-    1. `Outline server {i} Port`: Find it in Outline Manager > {Server i} > Settings > Port
+    1. `Outline server i Host`: Find it in Outline Manager > `{server i}` > Settings > Hostname
+    1. `Outline server i Port`: Find it in Outline Manager > `{server i}` > Settings > Port
     1. Allow the port for incoming/outgoing traffic if you have a firewall.
 1. Run `docker-compose up -d`.
-1. Change Outline Manager > {Server i} > Settings > Hostname field to the bridge server IP address.
+1. Change Outline Manager > `{server i}` > Settings > Hostname field to the bridge server IP address.
 1. Delete old access keys in the Outline Manager and generate new ones.
 1. Download [Outline client applications](https://getoutline.org/get-started/#step-3) and add the new access keys there.
 1. Enjoy the freedom!
