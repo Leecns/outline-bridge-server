@@ -1,6 +1,6 @@
 # Outline Bridge Server
 
-This repository includes Docker Compose files for running the Xray proxy as a bridge (relay) server for the Outline proxy.
+This repository includes Docker Compose files for running the Xray (V2Ray fork) proxy as a bridge (relay) server for the Outline proxy.
 Its purpose is to enable the Outline proxy to work effectively in severely restricted networks where direct, secure, or reliable access may not be available.
 
 ## Documentation
