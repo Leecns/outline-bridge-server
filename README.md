@@ -48,8 +48,8 @@ Follow these steps to set up the Xray and Outline:
 1. Run `docker-compose up -d` (or `docker compose up -d`).
 1. Change Outline Manager > `{server i}` > Settings > Hostname field to the bridge server IP address.
 1. Delete old access keys in the Outline Manager and generate new ones.
-1. Download [Outline client applications](https://getoutline.org/get-started/#step-3) and add the new access keys there.
-1. Enjoy the freedom!
+1. Download [Outline Client](https://getoutline.org/get-started/#step-3) and import a generated access key.
+1. Press "CONNECT" and enjoy the freedom!
 
 ## More
 
