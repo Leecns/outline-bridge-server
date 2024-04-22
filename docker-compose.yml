@@ -2,8 +2,9 @@ version: "3"
 
 services:
   xray:
-    image: ghcr.io/xtls/xray-core:latest
+    image: ghcr.io/v2fly/v2ray:v5.14.1-64-std
     restart: always
     network_mode: host
     volumes:
-      - ./configs/:/etc/xray
+      - ./configs/:/etc/v2ray/
+      - ./logs:/var/log/v2ray/
