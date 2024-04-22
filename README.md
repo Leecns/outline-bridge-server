@@ -44,7 +44,7 @@ Follow these steps to set up the Xray and Outline:
     1. `Number of Outline servers`: Please provide the number of servers, typically just `1`
     1. `Outline server i Host`: Find it in Outline Manager > `{server i}` > Settings > Hostname
     1. `Outline server i Port`: Find it in Outline Manager > `{server i}` > Settings > Port
-    1. Allow the port for incoming/outgoing traffic if you have a firewall like `ufw`.
+    1. If you are using a firewall such as `ufw`, add the port to the whitelist.
 1. Run `docker-compose up -d` (or `docker compose up -d`).
 1. Change Outline Manager > `{server i}` > Settings > Hostname field to the bridge server IP address.
 1. Delete old access keys in the Outline Manager and generate new ones.
