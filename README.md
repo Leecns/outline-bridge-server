@@ -45,7 +45,7 @@ Follow these steps to set up the bridge (relay) server:
     1. `Outline server i host`: Find it in $\color{green}{\textsf{Outline Manager}}$ > `Settings` > `Hostname`
     1. `Outline server i port`: Find it in $\color{green}{\textsf{Outline Manager}}$ > `Settings` > `Port for new access keys`
     1. If you are using a firewall such as `ufw`, add the port to the whitelist.
-1. Run `docker-compose up -d` (or `docker compose up -d`).
+1. Run `docker-compose up -d` or `docker compose up -d`.
 1. Change $\color{green}{\textsf{Outline Manager}}$ > `Settings` > `Hostname` field to the bridge server IP address.
 1. Delete old access keys in the $\color{green}{\textsf{Outline Manager}}$ and generate new ones.
 1. Download [Outline Client](https://getoutline.org/get-started/#step-3) and import a generated access key.
