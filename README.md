@@ -36,7 +36,7 @@ It changes the Outline flow as below.
 
 ### Setup Bridge Server using V2Ray
 
-Follow these steps to set up the bridge (relay) server:
+To set up a bridge (relay) server using V2Ray, follow these steps:
 
 1. Install Docker and Docker-compose on the bridge (relay) server.
 1. Clone this repository into the bridge server.
