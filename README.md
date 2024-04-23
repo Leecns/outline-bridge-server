@@ -8,7 +8,7 @@ The primary goal is to enhance the functionality of the Outline in highly restri
 ### What's Outline?
 
 [Outline](https://getoutline.org) is a set of proxy tools developed by Google based on the shadowsocks protocol.
-It includes Outline Manager, a desktop application for setting up servers, managing users, and tracking traffic, and Outline Client,
+It includes Outline Manager, a desktop application for setting up servers, managing users, and tracking traffic, and Outline Manager,
 a user-friendly app compatible with various mobile and desktop platforms.
 
 It normally works as below.
@@ -42,14 +42,14 @@ Follow these steps to set up the Xray and Outline:
 1. Clone this repository into the bridge server.
 1. Run `./setup.py`. It prompts the following items:
     1. `Number of Outline servers`: Please provide the number of servers, typically just `1`
-    1. `Outline server i Host`: Find it in **Outline Manager** > `{server i}` > `Settings` > `Hostname`
-    1. `Outline server i Port`: Find it in **Outline Manager** > `{server i}` > `Settings` > `Port`
+    1. `Outline server i host`: Find it in $\color{green}{\textsf{Outline Manager}}$  > `{server i}` > `Settings` > `Hostname`
+    1. `Outline server i port`: Find it in $\color{green}{\textsf{Outline Manager}}$  > `{server i}` > `Settings` > `Port`
     1. If you are using a firewall such as `ufw`, add the port to the whitelist.
 1. Run `docker-compose up -d` (or `docker compose up -d`).
-1. Change **Outline Manager** > `{server i}` > `Settings` > `Hostname` field to the bridge server IP address.
-1. Delete old access keys in the Outline Manager and generate new ones.
+1. Change $\color{green}{\textsf{Outline Manager}}$  > `{server i}` > `Settings` > `Hostname` field to the bridge server IP address.
+1. Delete old access keys in the $\color{green}{\textsf{Outline Manager}}$ and generate new ones.
 1. Download [Outline Client](https://getoutline.org/get-started/#step-3) and import a generated access key.
-1. Press `CONNECT` and enjoy the freedom!
+1. Press $\color{green}{\textsf{CONNECT}}$ and enjoy the freedom!
 
 ## More
 
