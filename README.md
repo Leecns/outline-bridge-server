@@ -11,7 +11,7 @@ The primary goal is to enhance the functionality of the Outline in highly restri
 It includes Outline Manager, a desktop application for setting up servers, managing users, and tracking traffic, and Outline Manager,
 a user-friendly app compatible with various mobile and desktop platforms.
 
-It normally works as below.
+It originally works as below.
 
 ```
 [Outline Client] <-> [Outline Server] <-> (Internet)
@@ -26,7 +26,7 @@ This specific protocol forwards incoming traffic (TCP and UDP) from a specified 
 
 ### What's a Bridge Server?
 
-A bridge server connects clients to Outline servers by forwarding their traffic.
+A bridge (relay) server connects clients to Outline servers by forwarding their traffic.
 
 It changes the Outline flow as below.
 
@@ -34,11 +34,11 @@ It changes the Outline flow as below.
 [Outline Client] <-> [Bridge Server] <-> [Outline Server] <-> (Internet)
 ```
 
-### Setup V2Ray as Bridge Server
+### Setup Bridge Server using V2Ray
 
-Follow these steps to set up the Xray and Outline:
+Follow these steps to set up the bridge (relay) server:
 
-1. Install Docker and Docker-compose on the bridge server.
+1. Install Docker and Docker-compose on the bridge (relay) server.
 1. Clone this repository into the bridge server.
 1. Run `./setup.py`. It prompts the following items:
     1. `Number of Outline servers`: Please provide the number of servers, typically just `1`
