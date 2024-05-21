@@ -1,14 +1,14 @@
 # Outline Bridge Server
 
-This repository contains Docker Compose files designed to deploy V2Ray as a bridge (relay) server for the Outline proxy.
-The primary goal is to enhance the functionality of the Outline in highly restricted networks where direct connections to the Outline server is not possible.
+This repository contains a Docker Compose file designed to run V2Ray as a bridge (relay) server for the Outline (shadowsocks proxy by Google Jigsaw).
+The primary goal is to enhance the functionality of the Outline in highly restricted networks where direct connections to Outline servers is not possible.
 
 ## Documentation
 
 ### What's Outline?
 
 [Outline](https://getoutline.org) is a set of proxy tools developed by Google based on the shadowsocks protocol.
-It includes Outline Manager, a desktop application for setting up servers, managing users, and tracking traffic, and Outline Manager,
+It includes Outline Manager, a desktop application for setting up servers, managing users, and tracking traffic, and Outline Client,
 a user-friendly app compatible with various mobile and desktop platforms.
 
 It originally works as below.
