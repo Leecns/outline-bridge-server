@@ -8,10 +8,12 @@ The primary goal is to enhance the functionality of the Outline in highly restri
 ### What's Outline?
 
 [Outline](https://getoutline.org) is a set of proxy tools developed by Google based on the shadowsocks protocol.
-It includes Outline Manager, a desktop application for setting up servers, managing users, and tracking traffic, and Outline Client,
-a user-friendly app compatible with various mobile and desktop platforms.
+It includes:
+* Outline Manager: A desktop app for setting up servers, managing users, and tracking traffics.
+* Outline Server: A shadowsocks server that will be installed on your servers by the Outline Manager app.
+* Outline Client: A user-friendly and cross-platform app for users.
 
-It originally works as below.
+The original Outline proxy flow:
 
 ```
 [Outline Client] <-> [Outline Server] <-> (Internet)
@@ -31,7 +33,7 @@ A bridge (relay) server connects clients to Outline servers by forwarding their 
 It changes the Outline flow as below.
 
 ```
-[Outline Client] <-> [Bridge Server] <-> [Outline Server] <-> (Internet)
+[Outline Client] <-> [V2Ray in Bridge Server] <-> [Outline Server] <-> (Internet)
 ```
 
 ### Setup Bridge Server using V2Ray
