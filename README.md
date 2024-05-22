@@ -9,7 +9,7 @@ The primary goal is to enhance the functionality of the Outline in highly restri
 
 [Outline](https://getoutline.org) is a set of proxy tools developed by Google based on the shadowsocks protocol.
 It includes:
-* Outline Manager: A desktop app for setting up servers, managing users, and tracking traffics.
+* Outline Manager: A desktop app for setting up servers, managing users, and tracking used traffic.
 * Outline Server: A shadowsocks server that will be installed on the servers by the Outline Manager app.
 * Outline Client: A user-friendly and cross-platform app for users.
 
