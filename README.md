@@ -7,7 +7,7 @@ The primary goal is to enhance the functionality of the Outline in highly restri
 
 ### What's Outline?
 
-[Outline](https://getoutline.org) is a set of proxy tools developed by Google based on the shadowsocks protocol.
+[Outline](//getoutline.org) is a set of proxy tools developed by [Google Jigsaw](//jigsaw.google.com) based on the shadowsocks protocol.
 It includes:
 * Outline Manager: A desktop app for setting up servers, managing users, and tracking used traffic.
 * Outline Server: A shadowsocks server that will be installed on the servers by the Outline Manager app.
@@ -20,11 +20,11 @@ Outline Client <->  Outline Server   <-> (Internet)
 (User Network) <-> (Upstream Server) <-> (Internet)
 ```
 
-Read the [Outline official documentation](https://getoutline.org/get-started) to set up an Outline server.
+Read the [Outline official documentation](//getoutline.org/get-started) to set up an Outline server.
 
 ### What's V2Ray?
 
-[V2Ray](https://github.com/v2fly/v2ray-core) is a proxy tool that supports multiple protocols, including the `dokodemo-door` protocol.
+[V2Ray](//github.com/v2fly/v2ray-core) is a proxy tool that supports multiple protocols, including the `dokodemo-door` protocol.
 This specific protocol forwards incoming traffic (TCP and UDP) from a specified port to a designated destination port.
 
 ### What's a Bridge Server?
@@ -52,7 +52,7 @@ To set up a bridge (relay) server using V2Ray, follow these steps:
 1. Run `docker-compose up -d` or `docker compose up -d`.
 1. Change $\color{green}{\textsf{Outline Manager}}$ > `Settings` > `Hostname` field to the bridge server IP address.
 1. Delete old access keys in the $\color{green}{\textsf{Outline Manager}}$ and generate new ones.
-1. Download [Outline Client](https://getoutline.org/get-started/#step-3) and import a generated access key.
+1. Download [Outline Client](//getoutline.org/get-started/#step-3) and import a generated access key.
 1. Press $\color{green}{\textsf{CONNECT}}$ and enjoy the freedom!
 
 ## More
