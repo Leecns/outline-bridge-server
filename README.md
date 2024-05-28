@@ -25,12 +25,12 @@ Read the [Outline official documentation](//getoutline.org/get-started) to set u
 ### What's V2Ray?
 
 [V2Ray](//github.com/v2fly/v2ray-core) is a proxy tool that supports multiple protocols, including the `dokodemo-door` protocol.
-This protocol only forwards incoming traffic (TCP and UDP) from a specific port to a determined destination port, without changing the data.
+This protocol only forwards incoming traffic (TCP and UDP) from a specific port to a destination port, without changing the data.
 
 ### What's Bridge Server?
 
 A bridge (relay) server acts as an intermediary, accessible to users from restricted networks and connected to upstream servers.
-It is appropriate for running V2ray to relay incoming user traffic to Outline servers.
+It's an appropriate place for running V2ray to relay incoming user traffic to Outline servers.
 
 It changes the Outline flow as below.
 
