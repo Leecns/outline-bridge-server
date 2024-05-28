@@ -1,14 +1,14 @@
 # Outline Bridge Server
 
-This repository contains a Docker Compose file to run V2Ray as a bridge (relay) server for the Outline (a shadowsocks proxy by Google Jigsaw).
-You can use it to connect users to Outline servers within restricted networks where direct connections are not possible.
+Outline Bridge Server is a Docker Compose configuration for running v2ray as bridge (relay) server for Outline (a shadowsocks proxy by Google Jigsaw).
+It enables users to connect to Outline servers in restricted networks where direct connections are impossible.
 
 ## Documentation
 
 ### What's Outline?
 
 [Outline](//getoutline.org) is a set of proxy tools developed by [Google Jigsaw](//jigsaw.google.com) based on the shadowsocks protocol.
-This set includes:
+It includes these tools:
 * Outline Manager: A desktop app for setting up servers, managing users, and tracking used traffic.
 * Outline Server: A shadowsocks server that will be installed on the servers by the Outline Manager app.
 * Outline Client: A user-friendly and cross-platform app for users.
@@ -25,20 +25,21 @@ Read the [Outline official documentation](//getoutline.org/get-started) to set u
 ### What's V2Ray?
 
 [V2Ray](//github.com/v2fly/v2ray-core) is a proxy tool that supports multiple protocols, including the `dokodemo-door` protocol.
-This specific protocol forwards incoming traffic (TCP and UDP) from a specified port to a designated destination port.
+This protocol only forwards incoming traffic (TCP and UDP) from a specific port to a determined destination port, without changing the data.
 
-### What's a Bridge Server?
+### What's Bridge Server?
 
-A bridge (relay) server connects users to Outline servers by forwarding their traffic.
+A bridge (relay) server acts as an intermediary, accessible to users from restricted networks and connected to upstream servers.
+It is appropriate for running V2ray to relay incoming user traffic to Outline servers.
 
 It changes the Outline flow as below.
 
 ```
-Outline Client <->   V2Ray Proxy   <->  Outline Server   <-> (Internet)
 (User Network) <-> (Bridge Server) <-> (Upstream Server) <-> (Internet)
+Outline Client <->   V2Ray Proxy   <->  Outline Server   <-> (Internet)
 ```
 
-### Setup Bridge Server using V2Ray
+### Setup
 
 To set up a bridge (relay) server using V2Ray, follow these steps:
 
