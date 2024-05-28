@@ -1,7 +1,7 @@
 version: "3"
 
 services:
-  xray:
+  v2ray:
     image: ghcr.io/v2fly/v2ray:v5.16.1
     restart: always
     network_mode: host
