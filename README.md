@@ -56,6 +56,6 @@ To set up a bridge (relay) server using V2Ray, follow these steps:
 1. Download [Outline Client](//getoutline.org/get-started/#step-3) and import a generated access key.
 1. Press $\color{green}{\textsf{CONNECT}}$ and enjoy the freedom!
 
-## More
+## Links
 
 * [V2Ray Docker Compose](https://github.com/miladrahimi/v2ray-docker-compose)
