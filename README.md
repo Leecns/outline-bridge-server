@@ -52,8 +52,8 @@ To set up a bridge (relay) server using V2Ray, follow these steps:
     1. If you are using a firewall such as `ufw`, add the port to the whitelist.
 1. Run `docker-compose up -d` or `docker compose up -d`.
 1. Change $\color{green}{\textsf{Outline Manager}}$ > `Settings` > `Hostname` field to the bridge server IP address.
-1. Delete old access keys in the $\color{green}{\textsf{Outline Manager}}$ and generate new ones.
-1. Download [Outline Client](//getoutline.org/get-started/#step-3) and import a generated access key.
+1. Delete old access keys in the $\color{green}{\textsf{Outline Manager}}$ and generate new one.
+1. Download [Outline Client](//getoutline.org/get-started/#step-3) and add the generated access key.
 1. Press $\color{green}{\textsf{CONNECT}}$ and enjoy the freedom!
 
 ## Links
