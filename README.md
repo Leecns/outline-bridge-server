@@ -1,6 +1,6 @@
 # Outline Bridge Server
 
-Outline Bridge Server is a Docker Compose for running v2ray as bridge (relay) server for Outline (a shadowsocks proxy by Google Jigsaw).
+Outline Bridge Server is a Docker Compose for running V2Ray as bridge (relay) server for Outline (a shadowsocks proxy by Google Jigsaw).
 It enables users to connect to Outline servers in restricted networks where direct connections are impossible.
 
 ## Documentation
@@ -30,7 +30,7 @@ This protocol only forwards incoming traffic (TCP and UDP) from a specific port 
 ### What's Bridge Server?
 
 A bridge (relay) server acts as an intermediary, accessible to users from restricted networks and connected to upstream servers.
-It's an appropriate place for running V2ray to relay incoming user traffic to Outline servers.
+It's an appropriate place for running V2Ray to relay incoming user traffic to Outline servers.
 
 It changes the Outline flow as below.
 
